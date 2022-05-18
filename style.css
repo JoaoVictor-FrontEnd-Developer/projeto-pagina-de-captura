@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+header{
+    position: sticky;
+    top: 0%;
+    width: 100%;
+    background: white;
+    overflow: hidden;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 10px gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.logo img{
+    max-width: 40px;
+    
+}
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 40px;
+    box-sizing: border-box;
+    
+}
+
+li{
+
+    margin-right: 30px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.5s;
+    
+}
+
+a:visited{
+    color: black;
+}
+
+a:hover{
+    color: rgb(255, 153, 0);
+    
+    
+}
+
+.home{
+    background-color: rgb(255, 153, 0);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    transition-duration: 0.5s;
+    
+}
+
+.home:hover{
+    background-color: rgb(255, 145, 0);
+    box-shadow: 0px 2px 0px gray;
+    
+}
+
+
+/* First-content*/
+.first-content{
+    box-sizing: border-box;
+    padding: 100px;
+    width: 100%;
+    height: 600px;
+    background: url(./assets/marketing-strategy-connting-digital-devices-concept.jpg) center center/cover fixed;
+    margin-bottom: 50px;
+    
+}
+
+
+.form-bar{
+    padding: 40px;
+    max-width: 300px;
+    float: right;
+    background-color: #ffffffbb;
+}
+
+h3{
+    font-size: 30px;
+}
+
+.margin-bottom{
+    margin-bottom: 10px;
+}
+
+input{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition-duration: 0.5s;
+}
+
+.subscrib{
+    background-color: rgb(255, 153, 0);
+    color: white;
+    box-shadow: 0px 3px 5px gray;
+}
+
+.subscrib:hover{
+    background-color: rgb(255, 145, 0);
+    padding: 13px;
+    transition-duration: 0.5s;
+}
+
+.subscrib:visited{
+    background-color: rgb(255, 153, 0);
+    color: white;
+}
+
+/* Second-content*/
+.title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title h2{
+    font-size: 40px;
+}
+
+.second-content{
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    margin-bottom: 50px;
+}
+
+.services{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px;
+    
+}
+
+.service{
+    max-width: 300px;
+    
+}
+
+
+
+.service p{
+    text-align: justify;
+}
+
+/*footer*/
+
+footer{
+    background-color: rgb(255, 153, 0);
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    
+}
+.picture{
+    max-width: 160px;
+}
+
+.description{
+    margin-left: 30px;
+    max-width: 300px;
+    color: white;
+    display: inline-block;
+    text-align: left;
+}
+
+.description h3, .description p{
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 1060px){
+    .service{
+        max-width: 200px;
+        
+    }
+}
+
+@media screen and (max-width: 760px){
+    .form-bar{
+        padding: 40px;
+        max-width: 500px;
+        float: right;
+        background-color: #ffffffbb;
+    }
+
+
+    .second-content{
+        width: 100%;
+        background-color: rgb(241, 241, 241);
+        margin-bottom: 50px;
+        
+    }
+
+    .services{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        padding: 40px;
+
+    }
+    .service{
+        max-width: 500px;
+        margin-bottom: 20px;
+        
+    }
+
+    .service p{
+        margin: 10px 0px;
+        text-align: justify;
+        
+    }
+}
+
+@media screen and (max-width: 550px){
+    /*Header*/
+    header{
+        position: static;
+        top: 0%;
+        width: 100%;
+        background: white;
+        overflow: hidden;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    .logo{
+        text-align: center;
+        display: block;
+        margin-left: 0px;
+        margin-bottom: 10px;
+        
+    }
+    
+    .menu{
+        float: none;
+        list-style: none;
+        margin-right: 0px;
+        text-align: center;
+        
+    }
+    
+    li{
+        display: block;
+        margin-right: 0px;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 10px;
+        
+    }
+
+    li:hover{
+        background: rgb(207, 207, 207);
+    }
+    
+    /*first-content*/
+    .first-content{
+        box-sizing: border-box;
+        padding: 40px;
+        width: 100%;
+        height: 600px;
+        background-image: url(./assets/marketing-strategy-connting-digital-devices-concept.jpg);
+        overflow: hidden;
+        background-size: cover;
+        margin-bottom: 50px;
+    }
+
+    .form-bar{
+        padding: 40px;
+        max-width: 500px;
+        float: right;
+        background-color: #ffffffbb;
+    }
+}
+
+
+
+
+
